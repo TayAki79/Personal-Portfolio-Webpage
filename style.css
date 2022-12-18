@@ -68,14 +68,14 @@ body::-webkit-scrollbar {
 }
 
 #projects {
-  height: 140vh;
+  padding: 10rem 2rem;
+  text-align: center;
   background-color: var(--main-blue);
 }
 
 #projects h1 {
   color: var(--white);
-  margin: 0 auto;
-  padding-top: 80px;
+  margin: -50px auto 0 auto;
   font-size: 2.5rem;
   border-bottom: 2px solid var(--white);
   width: 600px;
@@ -86,7 +86,7 @@ body::-webkit-scrollbar {
   grid-template-columns: 400px 400px 400px;
   gap: 40px;
   justify-content: center;
-  padding-top: 70px;
+  padding: 70px 0 60px 0;
 }
 
 .tile-img {
@@ -125,6 +125,22 @@ a:hover .code {
   color: var(--white);
   text-decoration: none;
   text-align: center;
+  padding: 10px 20px;
+  background-color: var(--main-gray);
+  transition: 0.3s ease-in-out;
+}
+
+.show-all:hover {
+  background-color: var(--red);
+}
+
+.show-all .arrow {
+  margin-left: 5px;
+  transition: 0.3s ease-out;
+}
+
+.show-all:hover .arrow {
+  margin-left: 10px;
 }
 
 #contact {
